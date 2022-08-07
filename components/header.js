@@ -81,13 +81,6 @@ const PageHeader = ({ creadev,home, hpe, transformation, illustration, about, ex
             </NavLink>
           </Link>
         </NavItem>
-        <NavItem>
-          <Link href="/about">
-            <NavLink>
-              About
-            </NavLink>
-          </Link>
-        </NavItem>
       </Nav>
     </StyledPageHeader>
 )
