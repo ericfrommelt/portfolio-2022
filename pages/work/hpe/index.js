@@ -63,11 +63,11 @@ const ImageWrapper = styled.div`
 
 const SectionHeader = styled.h2`
   font-weight: 400;
-  grid-column: ${props => props.theme.small};
+  grid-column: 2 / span 10;
   padding: 2em 0;
   
   @media (min-width: 800px) {
-    grid-column: ${props => props.theme.wide};
+    grid-column: 2 / span 10;
     padding: 4em 0 2em 0;
   }
 `
@@ -194,9 +194,7 @@ export default function Hpe () {
           </IntroImages>
         </Intro>
         <GridWrapper>
-          <ThemeProvider theme={theme}>
-            <SectionHeader>Illustrated typography</SectionHeader>
-          </ThemeProvider>
+        <SectionHeader>Illustrated typography</SectionHeader>
           <IllustratedType>
             <Image
               src="/images/hpe/IllustratedType.png"
@@ -206,9 +204,7 @@ export default function Hpe () {
               layout="intrinsic"
             />
           </IllustratedType>
-          <ThemeProvider theme={theme}>
-            <SectionHeader>Motion study</SectionHeader>
-          </ThemeProvider>
+        <SectionHeader>Motion study</SectionHeader>
           <MotionStudy>
             <Image
               src="/images/hpe/cybercrime_motion.gif"
@@ -245,9 +241,7 @@ export default function Hpe () {
           </DesignSystemCode>
         </DesignSystem>
         <GridWrapper>
-          <ThemeProvider theme={theme}>
-            <SectionHeader>Social images</SectionHeader>
-          </ThemeProvider>
+        <SectionHeader>Social images</SectionHeader>
           <SocialTiles>
             <Image
               src="/images/hpe/HPE_SocialTiles.png"
